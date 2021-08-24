@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Conversor de divisas</title>
+  </head>
+  <body>
+    <main class="hero">
+      <h1 id="title">Conversor de Divisas</h1>
+      <form action="" id="form">
+        <input type="number" placeholder="Ingresa el valor" id="quantity" required />
+        <button type="button" onclick="getQuantity(), showToScreen(), changeColor()">Convertir</button>
+      </form>
+
+      <div class="selectExchange">
+        <select name="countries" id="countries-from">
+          <option>Elige tu Moneda</option>
+        </select>
+
+        <select name="countries" id="countries-to">
+          <option>Elige tu Moneda</option>
+        </select>
+      </div>
+      <p id="result">Selecciona las divisas para realizar la conversion</p>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
